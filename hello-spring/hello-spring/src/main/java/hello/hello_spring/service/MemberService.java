@@ -2,6 +2,7 @@ package hello.hello_spring.service;
 
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +11,7 @@ import java.util.Optional;
 
 // class이름 (MemberService)에 커서를 대고 ctrl + shift + t
 // -> 자동으로 test파일 만들어줌
+@Transactional
 @Service
 public class MemberService {
 
