@@ -1,0 +1,14 @@
+Local instance
+
+create database db_codingrecipe;
+create user user_codingrecipe@localhost identified by '1234';
+grant all privileges on db_codingrecipe.* to user_codingrecipe@localhost;
+
+CodingRecipe
+
+use db_codingrecipe;
+create table test(
+	col1 varchar(10));
+select * from test;
+
+select * from member_table;
